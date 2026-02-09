@@ -1,4 +1,4 @@
-export const COLORS = {
+export const CORES = {
     titulo: "#515050",
     tituloApresentacao: '#1CBE73',
     subtitulo: "#51505075",
@@ -11,7 +11,8 @@ export const COLORS = {
     botaoInformacao: '#71717154',
     botaoCancelamento: '#CD1518',
     iconeFundoBotaoInformacao: '#1CBE73',
-    cartaoDeInformacao:'##D9D9D924'
+    cartaoDeInformacao:'##D9D9D924',
+    textoBotao: '#fff'
 }
 
 export const SIZE_TEXT ={
@@ -25,7 +26,7 @@ export const SIZE_TEXT ={
     descricaoCardBotao:14,
     tituloApresentacao: 16,
     descricaoApresentacao: 14,
-    tituloBotao:20,
+    tituloBotao:18,
     textoArtigo:18, 
 
 }
@@ -33,5 +34,13 @@ export const SIZE_TEXT ={
 export const BORDER_RADIUS ={
     campoDeTextoSimples: 2,
     botaoInformacao:2,
-    cartaoNavegacao:10 
+    cartaoNavegacao:10,
+    botao:2
+}
+
+export const WIDTH ={
+    botao: 300
+}
+export const HEIGTH ={
+    botao:50
 }
