@@ -15,7 +15,8 @@ export const CORES = {
     iconeFundoBotaoInformacao: '#1CBE73',
     cartaoDeInformacao:'##D9D9D924',
     textoBotao: '#fff',
-    corIconeBotoes:"#fff"
+    corIconeBotoes:"#fff",
+    tituloCardLink: '#3D3C3C'
 }
 
 export const SIZE_TEXT ={
@@ -46,10 +47,12 @@ export const BORDER_RADIUS ={
 export const WIDTH ={
     botao: 360,
     input: 360,
-    botaoRedondo:64
+    botaoRedondo:64,
+    botaoNavegaçao:160
 }
 export const HEIGTH ={
     botao:50,
     input: 50,
-    botaoRedondo:64
+    botaoRedondo:64,
+    botaoNavegacao:135
 }
