@@ -1,3 +1,5 @@
+import BotaoRedondo from "./src/Componentes/BotãoRedondo"
+
 export const CORES = {
     titulo: "#515050",
     tituloApresentacao: '#1CBE73',
@@ -13,6 +15,7 @@ export const CORES = {
     iconeFundoBotaoInformacao: '#1CBE73',
     cartaoDeInformacao:'##D9D9D924',
     textoBotao: '#fff',
+    corIconeBotoes:"#fff"
 }
 
 export const SIZE_TEXT ={
@@ -28,6 +31,7 @@ export const SIZE_TEXT ={
     descricaoApresentacao: 14,
     tituloBotao:18,
     textoArtigo:18, 
+    iconeBotaoRedondo:28
 
 }
 
@@ -35,14 +39,17 @@ export const BORDER_RADIUS ={
     campoDeTextoSimples: 2,
     botaoInformacao:2,
     cartaoNavegacao:10,
-    botao:2
+    botao:2,
+    BotaoRedondo:100
 }
 
 export const WIDTH ={
     botao: 360,
-    input: 360
+    input: 360,
+    botaoRedondo:64
 }
 export const HEIGTH ={
     botao:50,
-    input: 50
+    input: 50,
+    botaoRedondo:64
 }
