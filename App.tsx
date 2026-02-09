@@ -1,6 +1,5 @@
 
 import { StyleSheet, View } from 'react-native';
-import Botao from './src/Componentes/Botão';
 export default function App() {
   return (
     <View style={styles.container}>

@@ -2,7 +2,7 @@ export const CORES = {
     titulo: "#515050",
     tituloApresentacao: '#1CBE73',
     subtitulo: "#51505075",
-    camporEntradaDeTexto: "#71717154",
+    campoEntradaDeTexto: "#7171712f",
     cartaoNavegacao: '#11D4524D',
     botao: '#1CBE73',
     iconeDoCartao: '#1CBE73',
@@ -12,7 +12,7 @@ export const CORES = {
     botaoCancelamento: '#CD1518',
     iconeFundoBotaoInformacao: '#1CBE73',
     cartaoDeInformacao:'##D9D9D924',
-    textoBotao: '#fff'
+    textoBotao: '#fff',
 }
 
 export const SIZE_TEXT ={
@@ -39,8 +39,10 @@ export const BORDER_RADIUS ={
 }
 
 export const WIDTH ={
-    botao: 300
+    botao: 360,
+    input: 360
 }
 export const HEIGTH ={
-    botao:50
+    botao:50,
+    input: 50
 }

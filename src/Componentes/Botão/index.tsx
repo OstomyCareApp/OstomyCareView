@@ -1,11 +1,10 @@
-import {TouchableOpacity, Text } from "react-native";
+import {TouchableOpacity, TouchableOpacityProps, Text } from "react-native";
 import styles from "./styles";
 
-type Props={
+type Props= TouchableOpacityProps &{
     titulo:string;
-    onPress?: ()=> void;
 }
-function Botao({titulo, onPress}:Props){
+function Botao({titulo,onPress}:Props){
     return(
         <TouchableOpacity 
         style={styles.botao}
