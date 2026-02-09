@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         height:HEIGTH.botao,
 
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
     },
     titulo:{
         color:CORES.textoBotao,
