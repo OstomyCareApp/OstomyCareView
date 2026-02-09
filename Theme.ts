@@ -1,0 +1,37 @@
+export const COLORS = {
+    titulo: "#515050",
+    tituloApresentacao: '#1CBE73',
+    subtitulo: "#51505075",
+    camporEntradaDeTexto: "#71717154",
+    cartaoNavegacao: '#11D4524D',
+    botao: '#1CBE73',
+    iconeDoCartao: '#1CBE73',
+    iconeMenuNavegacao: '#515050',
+    tituloMenuNavegacao: '#515050',
+    botaoInformacao: '#71717154',
+    botaoCancelamento: '#CD1518',
+    iconeFundoBotaoInformacao: '#1CBE73',
+    cartaoDeInformacao:'##D9D9D924'
+}
+
+export const SIZE_TEXT ={
+    titulo: 24,
+    descricao:18,
+    tituloCampoEntradaTexto: 16,
+    descricaoCampoEntradaTexto: 16,
+    tituloCabecalho:16,
+    //card da tela principal
+    tituloCardBotao: 16,
+    descricaoCardBotao:14,
+    tituloApresentacao: 16,
+    descricaoApresentacao: 14,
+    tituloBotao:20,
+    textoArtigo:18, 
+
+}
+
+export const BORDER_RADIUS ={
+    campoDeTextoSimples: 2,
+    botaoInformacao:2,
+    cartaoNavegacao:10 
+}
