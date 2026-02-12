@@ -13,7 +13,7 @@ export const CORES = {
     botaoInformacao: '#71717154',
     botaoCancelamento: '#CD1518',
     iconeFundoBotaoInformacao: '#1CBE73',
-    cartaoDeInformacao:'##D9D9D924',
+    cartaoDeInformacao:'#D9D9D924',
     textoBotao: '#fff',
     corIconeBotoes:"#fff",
     tituloCardLink: '#3D3C3C'
