@@ -1,13 +1,17 @@
 import { StyleSheet } from "react-native";
 
-
 const styles = StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
+
+    },
+    apresentacao:{
+        paddingHorizontal:40,
     },
     containerBotao:{
+        paddingVertical:200,
+        justifyContent:'center',
         alignItems:'center',
-        justifyContent:'center', 
         gap:30
     }
 })

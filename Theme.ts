@@ -21,7 +21,7 @@ export const CORES = {
 
 export const SIZE_TEXT ={
     titulo: 24,
-    descricao:18,
+    descricao:17,
     tituloCampoEntradaTexto: 16,
     descricaoCampoEntradaTexto: 16,
     tituloCabecalho:16,
