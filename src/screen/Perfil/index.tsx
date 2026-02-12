@@ -7,11 +7,19 @@ import { CORES } from "../../../Theme"
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import styles from "./styles";
+import TextoApresentacao from "../../Componentes/TextoApresentação";
 function Perfil(){
     return(
         <View style={ styles.container}>
             <Cabecalho></Cabecalho>
 
+            <View style ={styles.apresentacao}>
+                <TextoApresentacao
+                titulo="Meu perfil"
+                descricao="Acesse suas informações"
+                ></TextoApresentacao>
+            </View>
+           
             <View style={styles.containerBotao}>
                 <BotaoIcone titulo={'Dados Cadastrais'} 
                 Icon ={Ionicons} nomeIcone={'information-circle-outline'} 
