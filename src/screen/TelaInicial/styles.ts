@@ -1,10 +1,12 @@
 import { StyleSheet } from "react-native";
+import { CORES } from "../../../Theme";
 
 const styles = StyleSheet.create({
     container:{
         flex:1,
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        backgroundColor:CORES.fundoTela
     },
     logo:{
         width:200,

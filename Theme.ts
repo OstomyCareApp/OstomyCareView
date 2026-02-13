@@ -16,7 +16,8 @@ export const CORES = {
     cartaoDeInformacao:'#D9D9D924',
     textoBotao: '#fff',
     corIconeBotoes:"#fff",
-    tituloCardLink: '#3D3C3C'
+    tituloCardLink: '#3D3C3C',
+    fundoTela: '#fff'
 }
 
 export const SIZE_TEXT ={
