@@ -1,9 +1,15 @@
 import { Image, View } from "react-native";
 import styles from './styles'
 import Botao from "../../Componentes/Botão";
+import { useNavigation } from "@react-navigation/native";
 
+function Inicial(){
 
-function TelaInicial(){
+    const navigation = useNavigation();
+
+    function irParaTelaPrincipal(){
+        navigation.navigate("App");
+    }
     return(
         <View style={styles.container}>
             <View>
@@ -13,14 +19,13 @@ function TelaInicial(){
             </View>
 
             <View style ={styles.containerBotao}>
-                <Botao titulo="Entrar"></Botao>
+                <Botao 
+                titulo="Entrar"
+                onPress={irParaTelaPrincipal}></Botao>
                 <Botao titulo="Cadastar"></Botao>
-
             </View>
-           
         </View>
-        
     )
 }
 
-export default TelaInicial;
+export default Inicial;
