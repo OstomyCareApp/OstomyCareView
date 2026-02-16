@@ -2,14 +2,19 @@ import { Image, View } from "react-native";
 import styles from './styles'
 import Botao from "../../Componentes/Botão";
 import { useNavigation } from "@react-navigation/native";
+import { StackParamList } from '../../routes/types';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
+
+type NavigationProps = NativeStackNavigationProp< StackParamList,'Inicial'>;
 
 function Inicial(){
+    const navigate = useNavigation<NavigationProps>();
 
-    const navigation = useNavigation();
-
-    function irParaTelaPrincipal(){
-        navigation.navigate("App");
+    function irParaPrincipal(){
+        navigate.navigate("Principal");
     }
+
     return(
         <View style={styles.container}>
             <View>
@@ -21,7 +26,8 @@ function Inicial(){
             <View style ={styles.containerBotao}>
                 <Botao 
                 titulo="Entrar"
-                onPress={irParaTelaPrincipal}></Botao>
+                onPress={irParaPrincipal}
+                ></Botao>
                 <Botao titulo="Cadastar"></Botao>
             </View>
         </View>

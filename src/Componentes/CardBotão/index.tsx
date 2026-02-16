@@ -1,19 +1,21 @@
 import { TouchableOpacity, Text, TouchableOpacityProps, View } from "react-native";
 import styles from "./style";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { ComponentType } from "react";
 
-type Props ={
+type Props = TouchableOpacityProps &{
     titulo:string;
     texto:string;
-    icone: keyof typeof Ionicons.glyphMap;
+    Icon:ComponentType<any>;
+    nome:string
     tamanhoIcone:number;
     corIcone:string;
 }
-function CardBotao({titulo,texto, icone, tamanhoIcone, corIcone,...rest}:Props){
+function CardBotao({titulo,texto, Icon,nome, tamanhoIcone, corIcone,...rest}:Props){
     return(
-        <TouchableOpacity style={styles.botao}>
-            <Ionicons
-            name={icone}
+        <TouchableOpacity style={styles.botao} {...rest}>
+            <Icon
+            name={nome}
             size={tamanhoIcone}
             color={corIcone}
             style={styles.icone}

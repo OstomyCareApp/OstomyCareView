@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
     titulo:{
         fontSize: SIZE_TEXT.titulo,
         fontWeight:'bold',
-        color:CORES.titulo
+        color:CORES.titulo,
+        paddingBottom:10
     },
     descricao:{
         fontSize: SIZE_TEXT.descricao,

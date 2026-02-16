@@ -1,10 +1,12 @@
 import { NavigationContainer } from "@react-navigation/native";
-import NavigationStack from "../NavigationStack";
+import Stack from "../stack";
 
-export default function Rotas() {
-    return (
-    <NavigationContainer>
-        <NavigationStack/>
-    </NavigationContainer>
-    );
+function Rotas(){
+    return(
+        <NavigationContainer>
+            <Stack></Stack>
+        </NavigationContainer>
+    )
 }
+
+export default Rotas;

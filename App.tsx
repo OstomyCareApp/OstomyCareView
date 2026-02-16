@@ -1,6 +1,4 @@
-
-import Rotas from './src/routes/root';
-import Perfil from './src/screen/Perfil';
+import Rotas from "./src/routes/root";
 
 export default function App() {
   return (

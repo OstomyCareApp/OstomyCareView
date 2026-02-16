@@ -1,15 +1,19 @@
 import { TouchableOpacity, Image, Text, View, TouchableOpacityProps } from "react-native";
 import styles from "./styles";
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { CORES } from "../../../Theme";
+import { useNavigation } from "@react-navigation/native";
 
 //O TouchableOpacityProps servirá para usar o onPress nos botões
 function Cabecalho() {
+    const navigate= useNavigation();
+
+    function voltar(){
+        navigate.goBack();
+    }
     return (
         <View style={styles.container}>
-
-            <TouchableOpacity style={styles.botaoVoltar}>
+            <TouchableOpacity style={styles.botaoVoltar} onPress={voltar}>
                 <MaterialIcons name="arrow-back-ios" size={24} color={CORES.titulo} />
             </TouchableOpacity>
 
@@ -22,17 +26,8 @@ function Cabecalho() {
                     <Text style={styles.titulo}>Ostomy</Text>
                     <Text style={styles.subtitulo}>Care</Text>
                 </View>
-                
             </View>
-
-            <TouchableOpacity style={styles.botaoPerfil}>
-                <FontAwesome name="user-circle" size={38} color={CORES.titulo} />
-                <Text style={styles.tituloPerfil}>Meu perfil</Text>
-            </TouchableOpacity>
-
         </View>
     )
 }
-
-
 export default Cabecalho;

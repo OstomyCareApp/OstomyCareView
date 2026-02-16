@@ -1,4 +1,3 @@
-import BotaoRedondo from "./src/Componentes/BotãoRedondo"
 
 export const CORES = {
     titulo: "#515050",
