@@ -6,15 +6,14 @@ type Props= TextInputProps &{
     titulo:string;
     descricao:string
 }
-function InputTitulo({titulo, descricao,...rest}:Props){
+function InputTitulo({titulo, descricao,style,...rest}:Props){
     return(
         <View>
             <Text style={styles.titulo}>{titulo}</Text>
             <TextInput 
-            style={styles.entradaTexto}
+            style={[styles.entradaTexto, style]}
             placeholderTextColor={CORES.subtitulo}
             placeholder={descricao}
-            //keyboardType={''} - usar essa propriedade pra definir o tipo de input
             {...rest}
             ></TextInput>
         </View>

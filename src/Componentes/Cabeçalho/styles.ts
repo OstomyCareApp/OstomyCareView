@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         paddingHorizontal: 20,
-        paddingVertical: 40,      
+        paddingVertical: 40,  
     },
     botaoVoltar: {
         width:30,

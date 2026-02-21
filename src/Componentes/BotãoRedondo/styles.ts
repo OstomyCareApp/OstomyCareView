@@ -9,7 +9,7 @@ const styles= StyleSheet.create({
         borderRadius: BORDER_RADIUS.BotaoRedondo,
 
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
     }
 })
 

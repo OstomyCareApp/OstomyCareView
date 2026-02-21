@@ -46,13 +46,13 @@ export const BORDER_RADIUS ={
 
 export const WIDTH ={
     botao: 360,
-    input: 360,
-    botaoRedondo:64,
+    input: "100%",
+    botaoRedondo:52,
     botaoNavegaçao:160
 }
 export const HEIGTH ={
     botao:50,
     input: 50,
-    botaoRedondo:64,
+    botaoRedondo:52,
     botaoNavegacao:135
 }

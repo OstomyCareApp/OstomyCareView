@@ -1,17 +1,18 @@
 import { TouchableOpacity , TouchableOpacityProps} from "react-native";
 import styles from "./styles";
-import { AntDesign } from '@expo/vector-icons';
+import { ComponentType } from "react";
 
 type Props= TouchableOpacityProps &{
-    icone: keyof typeof AntDesign.glyphMap;
+    Icon: ComponentType<any>;
+    nome: string;
     tamanhoIcone: number;
     corIcone: string;
 }
-function BotaoRedondo({icone, tamanhoIcone, corIcone, ...rest}:Props){
+function BotaoRedondo({Icon, nome, tamanhoIcone, corIcone, ...rest}:Props){
     return(
         <TouchableOpacity style={styles.botao} {...rest}>
-            <AntDesign
-            name={icone}
+            <Icon
+            name={nome}
             size={tamanhoIcone}
             color={corIcone}
             />
