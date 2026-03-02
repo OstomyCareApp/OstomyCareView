@@ -11,9 +11,14 @@ type NavigationProps = NativeStackNavigationProp< StackParamList,'Inicial'>;
 function Inicial(){
     const navigate = useNavigation<NavigationProps>();
 
-    function irParaPrincipal(){
-        navigate.navigate("Principal");
+    function irParaLogin(){
+        navigate.navigate("Login");
     }
+    function irParaCadastro(){
+        navigate.navigate("Cadastro")
+    }
+
+
 
     return(
         <View style={styles.container}>
@@ -26,9 +31,10 @@ function Inicial(){
             <View style ={styles.containerBotao}>
                 <Botao 
                 titulo="Entrar"
-                onPress={irParaPrincipal}
+                onPress={irParaLogin}
                 ></Botao>
-                <Botao titulo="Cadastar"></Botao>
+                <Botao titulo="Cadastar"
+                onPress={irParaCadastro}></Botao>
             </View>
         </View>
     )

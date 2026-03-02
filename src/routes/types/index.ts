@@ -22,7 +22,9 @@ export type StackParamList = {
     Principal: undefined; 
     ArtigoCompleto: {
         artigo:Artigo;
-    }
+    };
+    Cadastro:undefined;
+    Login: undefined;
 
 };
 
@@ -33,4 +35,5 @@ export type TabParamList = {
     Artigos: undefined;
     Perfil: undefined;
 };
+
 

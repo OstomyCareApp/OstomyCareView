@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
     titulo:{
         fontSize:14,
         color:CORES.titulo,
-        paddingBottom:10
+        paddingBottom:10,
+        fontWeight:'400'
     },
     entradaTexto:{
         backgroundColor:CORES.campoEntradaDeTexto,

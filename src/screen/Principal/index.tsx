@@ -10,11 +10,14 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import { CORES } from "../../../Theme";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { SimpleLineIcons } from "@expo/vector-icons";
+import stylesGlobal from "../../styles/styles";
+import { useAuth } from "../../context/AuthContext";
 
 type NavigationProps = BottomTabNavigationProp< TabParamList,"Inicio">;
 
 function Principal(){
     const navigation = useNavigation<NavigationProps>();
+    const {usuario } = useAuth();
 
     function irParaDiario(){
         navigation.navigate("Diario")
@@ -25,13 +28,13 @@ function Principal(){
     }
 
     return(
-        <View style = {styles.container}>
+        <View style = {stylesGlobal.container}>
             <Cabecalho/>
 
             <ScrollView contentContainerStyle={styles.contentContainer}>
-            <View style = {styles.containerApresentacao}>
+            <View style = {stylesGlobal.containerApresentacao}>
                 <TextoApresentacao
-                titulo="Ola, Visitante!"
+                titulo= {`Olá,${usuario?.nome ?? "Usuário"}`}
                 descricao="Seja bem-vindo(a) ao OstomyCare, nosso objetivo é o seu bem estar."/>
             </View>
 

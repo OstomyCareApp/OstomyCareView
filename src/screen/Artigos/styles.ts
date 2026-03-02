@@ -2,9 +2,6 @@ import { StyleSheet } from "react-native";
 import { CORES } from "../../../Theme";
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-    },
     botaoAdicionar:{
         position:'absolute',
         bottom: 24,

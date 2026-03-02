@@ -13,6 +13,8 @@ import { useNavigation } from "@react-navigation/native";
 import { StackParamList } from "../../routes/types";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Artigo } from "../../routes/types";
+import stylesGlobal from "../../styles/styles";
+import { useAuth } from "../../context/AuthContext";
 
 type NavigationProps = NativeStackNavigationProp<StackParamList,"ArtigoCompleto">;
 
@@ -20,6 +22,7 @@ function Artigos(){
     const [modalVisible, setModalVisible] = useState(false);
     const [artigos, setArtigos] = useState<Artigo[]>([]);
     const navigator = useNavigation<NavigationProps>();
+    const {usuario } = useAuth();
     
     const carregarArtigos = async () => {
     try {
@@ -39,7 +42,7 @@ function Artigos(){
     }
 
     return(
-    <View style= {styles.container}>
+    <View style= {stylesGlobal.container}>
         <Cabecalho/>
     
         <FlatList
@@ -72,16 +75,17 @@ function Artigos(){
         )}
         />
 
-        <View style ={styles.botaoAdicionar}>
-            <BotaoRedondo
+    {usuario?.tipoUsuario === "PROFISSIONAL" && (
+    <View style ={styles.botaoAdicionar}>
+        <BotaoRedondo
             Icon={AntDesign}
             nome="plus"
             tamanhoIcone={28}
             corIcone={CORES.corIconeBotoes}
-            onPress={()=>setModalVisible(true) }
-                />
-        </View>
-        
+            onPress={()=>setModalVisible(true)}
+        />
+    </View>
+    )}
         <ModalArtigo
         visible={modalVisible}
         onClose={() => setModalVisible(false)}

@@ -2,12 +2,6 @@ import { StyleSheet } from "react-native";
 import { CORES } from "../../../Theme";
 
 const styles = StyleSheet.create({
-    container: {
-        flex:1, 
-    },
-    containerApresentacao:{
-        paddingHorizontal:40,  
-    },
     containerCards:{
         flexDirection:'row',
         justifyContent:'center',
