@@ -22,3 +22,12 @@ export interface UsuarioLogado {
     exercicioProfissional?: string;
     token:string;
 }
+
+export interface Profissional{
+        id: number;
+        nome:string;
+        email:string;
+        telefone:string;
+        numeroCoren:string;
+        exercicioProfissional:string;
+}

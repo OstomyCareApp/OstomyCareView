@@ -1,4 +1,4 @@
-import { ScrollView, Text,View, Image } from "react-native";
+import { ScrollView, Text,View, Image, Alert } from "react-native";
 import styles from "./styles";
 import stylesGlobal from "../../styles/styles";
 import { useForm, useWatch , Controller,} from "react-hook-form";
@@ -23,11 +23,11 @@ function Cadastro(){
     const onSubmit = async (data: UsuarioCadastro) => {
         try{
             await cadastrarUsuario(data);
-            alert("Usuário cadastrado com sucesso");
+            Alert.alert("Usuário cadastrado com sucesso");
             navigate.navigate("Inicial")
             
         }catch(error){
-            alert("Erro ao cadastrar usuário");
+            Alert.alert("Erro ao cadastrar usuário");
         }
 
 };

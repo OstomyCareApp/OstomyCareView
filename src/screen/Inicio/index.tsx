@@ -18,8 +18,6 @@ function Inicial(){
         navigate.navigate("Cadastro")
     }
 
-
-
     return(
         <View style={styles.container}>
             <View>
